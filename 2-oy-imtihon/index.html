@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>2-oy-imtihon</title>
+</head>
+
+<body>
+    <header class="header container">
+        <a href="./index.html" class="header__logo">
+            <img src="./img/header-logo.svg" alt="img-header-logo">
+        </a>
+
+        
+        <input type="checkbox" name="hamburger" id="hamburger" class="hamburger">
+        <label for="hamburger" class="burgerKurinniy">
+            <span></span>
+        </label>
+
+
+        <nav class="header__navbar">
+            <ul class="header__navbar-items">
+                <li class="header__navbar-items-item"><a href="#">Pricing</a></li>
+                <li class="header__navbar-items-item"><a href="#">About</a></li>
+                <li class="header__navbar-items-item"><a href="#">Contact</a></li>
+
+            </ul>
+
+            <a href="#" class="header__navbar-button">
+                Schedule a Demo
+            </a>
+        </nav>
+    </header>
+
+    <main class="main ">
+        <div class="main-section1 container">
+            <div class="main-section1__left">
+                <h2 class="main-section1__left-tittle">
+                    Start building with our APIs for absolutely free.
+                </h2>
+                <div class="main-section1__left-input">
+                    <label for="email">
+                        <input type="email" name="email" id="email" required placeholder="Enter email address">
+                    </label>
+                    <button type="submit">
+                        Schedule a Demo
+                    </button>
+                </div>
+                <a href="#">Have any questions? Contact Us</a>
+            </div>
+
+            <div class="main-section1__right">
+                <img src="./img/sfera.png" alt="img" class="main-section1__right-bg">
+                <img src="./img/tablet-main1-bg.png" alt="img" class="main-section1__right-tabbg">
+                <div class="main-section1__right-mob">
+                    <img src="./img/tablet-main1-mob.png" alt="img" class="main-section1__right-tabmob">
+                    <img src="./img/mobile-section1.webp" alt="img-section-mob" width="420"
+                        class="main-section1__right-mobmax">
+                    <picture>
+                        <source media="(max-width: 1440px )" srcset="mobile-section1.webp">
+                        <source media="(max-width:  )" srcset="mobile-section1.webp">
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="main-section-second">
+                <div class="main-section2 container">
+                    <div class="main-section2__left">
+
+                        <h2 class="main-section2__left-tittle">
+                            Who we work with
+                        </h2>
+                        <p class="main-section2__left-paragraph">
+                            Today, millions of people around the world have successfully connected their accounts to apps
+                            they
+                            love using our API. We provide developers with the tools they need to create easy and accessible
+                            experiences for their users.
+                        </p>
+                        <a href="#" class="main-section2__left-button">
+                            About Us
+                        </a>
+
+                    </div>
+
+                    <div class="main-section2__right">
+                        <div class="main-section2__right-sites">
+                            <a href="https://www.tesla.com/">
+                                <img src="./img/tesla.svg" alt="site">
+                            </a>
+                            <a href="https://www.microsoft.com/ru-ru">
+                                <img src="./img/microsoft.svg" alt="site">
+                            </a>
+                            <a href="https://www.hpe.com/us/en/home.html">
+                                <img src="./img/hwlett.svg" alt="site">
+                            </a>
+                        </div>
+                        <div class="main-section2__right-sites">
+                            <a href="https://www.oracle.com/cis/index.html">
+                                <img src="./img/oracle.svg" alt="site">
+                            </a>
+                            <a href="https://www.google.ru/">
+                                <img src="./img/google.svg" alt="site">
+                            </a>
+                            <a href="https://www.nvidia.ru/Download/index.aspx">
+                                <img src="./img/nvidia.svg" alt="site">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="main-section3 container">
+                <div class="main-section3__left">
+                    <img src="./img/main3-img.png" alt="img" width="550">
+                </div>
+                <div class="main-seciton3__right">
+                    <h3 class="main-section3__right-tittle">Easy to implement</h3>
+                    <p class="main-section3__right-paragraph">Our API comes with just a few lines of code. You’ll be up and
+                        running in no time. We built our documentation page to integrate payments functionality with ease.
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-section4 container">
+                <div class="main-section4__left">
+                    <h3 class="main-section4__left-tittle">Simple UI & UX</h3>
+                    <p class="main-section4__left-paragraph">Our pre-built form is easy to integrate in your app or
+                        website’s checkout flow and designed to optimize conversion. </p>
+                </div>
+                <div class="main-section4__right">
+                    <img src="./img/section4-sfera.png" alt="bg" class="main-section4__right-bg">
+                    <img src="./img/section4-left-photo.png" alt="img" class="main-section4__right-img1">
+                    <img src="./img/section4-right-photo.png" alt="img" class="main-section4__right-img2">
+                </div>
+            </div>
+
+            <div class="main-section5 container">
+                <div class="main-section5__blog">
+                    <img src="./img/blog-dollar.svg" alt="dollar" class="main-section5__blog-img">
+                    <h4 class="main-section5__blog-tittle">Personal Finances</h4>
+                    <p class="main-section5__blog-paragraph">Consolidate financial data from multiple sources and categorize
+                        transactions up to 2 years of history. Analyze reports to reconcile activities in your account. </p>
+                </div>
+                <div class="main-section5__blog">
+                    <img src="./img/blog-static.svg" alt="blog-static" class="main-section5__blog-img">
+                    <h4 class="main-section5__blog-tittle">Banking & Coverage</h4>
+                    <p class="main-section5__blog-paragraph">With our platform, you can speed up account onboarding and
+                        support ongoing payments for checking, savings, credit card, and brokerage accounts.</p>
+                </div>
+                <div class="main-section5__blog">
+                    <img src="./img/blog-card.svg" alt="card" class="main-section5__blog-img">
+                    <h4 class="main-section5__blog-tittle">Consumer Payments</h4>
+                    <p class="main-section5__blog-paragraph">It’s easier to set up secure bank payments with us through a
+                        flow designed with the user experience in mind. Customers could instantly authenticate their
+                        account.</p>
+                </div>
+            </div>
+
+            <div class="main-section6 container">
+                <h2 class="main-section6__tittle">Ready to start?</h2>
+                <div class="main-section6__input">
+                    <input type="email" name="email" id="input" placeholder="Enter email address">
+                    <button type="submit">Schedule a Demo</button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-section container">
+                <a href="#" class="footer-section__logo">
+                    <img src="./img/footer-logo.svg" alt="logo">
+                </a>
+
+                <nav class="footer-section-nav">
+                    <a href="#" class="footer-section-nav__item">Pricing</a>
+                    <a href="#" class="footer-section-nav__item">About</a>
+                    <a href="#" class="footer-section-nav__item">Contact</a>
+                </nav>
+
+                <div class="footer-section__masangers">
+                    <a href="https://ru-ru.facebook.com/" class="footer-section__masangers-item">
+                        <img src="./img/footer-facebook.svg" alt="facebook">
+                    </a>
+                    <a href="https://twitter.com/?lang=ru" class="footer-section__masangers-item">
+                        <img src="./img/footer-twitter.svg" alt="twitt">
+                    </a>
+                    <a href="https://ru.linkedin.com/" class="footer-section__masangers-item">
+                        <img src="./img/footer-linki-din.svg" alt="in">
+                    </a>
+
+                </div>
+            </div>
+        </footer> -->
+</body>
+
+</html>

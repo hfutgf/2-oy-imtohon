@@ -1,0 +1,233 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  &__logo img {
+    transition: all ease 0.5s;
+  }
+
+  &__logo img:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  &__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-button {
+      text-decoration: none;
+
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      /* identical to box height */
+
+      letter-spacing: -0.115385px;
+
+      color: #fbfcfe;
+
+      background: #ba4270;
+      box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+      border-radius: 24px;
+      padding: 15px 25px;
+      margin-left: 500px;
+      transition: all ease 0.5s;
+
+      z-index: 2;
+    }
+
+    &-button:hover {
+      transform: translateY(-5px);
+      background: #a02253;
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+    &-items {
+      display: flex;
+      gap: 40px;
+
+      &-item {
+        list-style: none;
+        transition: all ease 0.5s;
+        a {
+          text-decoration: none;
+
+          font-family: "Public Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 18px;
+          /* identical to box height */
+
+          color: #36536b;
+        }
+      }
+
+      &-item:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  label,
+  input {
+    display: none;
+  }
+}
+@media (max-width: 1345px) {
+  .header__navbar-button {
+    margin-left: 350px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .header__navbar-button {
+    margin-left: 400px;
+  }
+}
+@media (max-width: 1060px) {
+  .header__navbar-button {
+    margin-left: 300px;
+  }
+}
+@media (max-width: 1000px) {
+  .header__navbar-button {
+    margin-left: 300px;
+  }
+}
+
+@media (max-width: 945px) {
+  .header__navbar-button {
+    margin-left: 250px;
+    font-size: 15px;
+  }
+
+  .header__navbar-items-item {
+    font-size: 15px;
+  }
+  .header__logo img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 850px) {
+  .header__navbar-button {
+    margin-left: 100px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 710px) {
+  .header__navbar-button {
+    margin-left: 30px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 625px) {
+  .header__navbar-button {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 610px) {
+  .header {
+    &__navbar {
+      position: absolute;
+      display: block;
+      max-width: 400px;
+      background-color: black;
+      min-height: 100vh;
+      right: 45px;
+      top: 60px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 5px;
+      padding: 40px;
+      z-index: 3;
+      display: none;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+      }
+    }
+    label {
+      display: block;
+    }
+  }
+  .hamburger:checked ~ .header_navbar {
+    display: flex;
+  }
+}
+
+
+#hamburger {
+  display: none;
+
+  &:checked {
+    & ~ .header__navbar {
+      display: block;
+    }
+    & + .burgerKurinniy span {
+      background: transparent;
+
+      &::before {
+        transition: all ease 0.5s;
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        transition: all ease 0.5s;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  .burgerKurinniy {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    z-index: 100;
+  
+    span {
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background: #000;
+      left: 0px;
+      top: 0px;
+  
+      &::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background: #000;
+        transform: translateY(-7px);
+        transition: all ease 0.5s;
+      }
+  
+      &::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background: #000;
+        transform: translateY(7px);
+        transition: all ease 0.5s;
+      }
+    }
+  }
+  }
+  
+  
+
+

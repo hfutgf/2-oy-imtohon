@@ -1,0 +1,39 @@
+.main-section5 {
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__blog {
+    &-img {
+      margin: 32px 95px;
+    }
+
+    &-tittle {
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+      /* identical to box height, or 139% */
+      text-align: center;
+      letter-spacing: -0.138462px;
+      color: #36536b;
+
+      margin-bottom: 16px;
+    }
+
+    &-paragraph {
+      max-width: 300px;
+
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      /* or 167% */
+      text-align: center;
+      letter-spacing: -0.115385px;
+      color: #6c8294;
+    }
+  }
+}

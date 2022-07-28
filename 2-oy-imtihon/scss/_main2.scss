@@ -1,0 +1,121 @@
+.main-section-second {
+  background: #1b262f;
+  min-height: 472px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.main-section2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__left {
+    padding-top: 100px;
+    position: relative;
+
+    &-tittle {
+      z-index: 100;
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      /* identical to box height, or 117% */
+      letter-spacing: -0.369231px;
+      color: #fbfcfe;
+    }
+
+    &-paragraph {
+      z-index: 100;
+      max-width: 445px;
+
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      /* or 187% */
+      color: #fbfcfe;
+
+      margin-top: 25px;
+      margin-bottom: 35px;
+    }
+
+    &-button {
+      z-index: 100;
+      text-decoration: none;
+
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      /* identical to box height */
+
+      text-align: center;
+      letter-spacing: -0.115385px;
+
+      color: #fbfcfe;
+
+      padding: 15px 32px;
+      border: 1px solid #fbfcfe;
+      border-radius: 24px;
+      transition: all ease 0.5s;
+    }
+    &-button:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 120px;
+
+    &-sites {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      a {
+        text-decoration: none;
+      }
+
+      a img {
+        transition: all ease 0.5s;
+      }
+
+      a img:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-section2 {
+    .main-section2__left-paragraph {
+      max-width: 400px;
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: row;
+    }
+    &__right div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .main-section2 {
+    .main-section2__left-tittle{
+      font-size: 40px;
+    }
+    .main-section2__left-paragraph {
+      max-width:355px;
+    }
+  }
+}

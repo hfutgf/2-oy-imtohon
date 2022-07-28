@@ -1,0 +1,60 @@
+.footer {
+  max-width: 1440px;
+  margin: 0px auto;
+  background: #1b262f;
+  min-height: 100px;
+  &-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__logo {
+      transition: all ease 0.5s;
+      margin-right: 65px;
+    }
+    &__logo:hover {
+      transform: translateY(-5px);
+    }
+
+    &-nav {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      a {
+        text-decoration: none;
+
+        font-family: "Public Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        /* identical to box height */
+        color: #fbfcfe;
+
+        transition: all ease 0.5s;
+      }
+      a:hover {
+        transform: translateY(-5px);
+        color: #777;
+      }
+    }
+
+    &__masangers {
+      position: absolute;
+      right: 150px;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      a {
+        text-decoration: none;
+        transition: all ease 0.5s;
+      }
+      a:hover {
+        box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px,
+          rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px,
+          rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+        transform: translateY(-5px);
+      }
+    }
+  }
+}

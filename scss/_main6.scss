@@ -1,0 +1,64 @@
+.main-section6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 100px;
+
+  &__tittle {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    /* identical to box height, or 117% */
+    letter-spacing: -0.369231px;
+    color: #36536b;
+  }
+
+  &__input {
+    position: relative;
+    input {
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      /* identical to box height */
+      color: #36536b;
+
+      background: #fbfcfe;
+      box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+      border-radius: 24px;
+      border: none;
+      padding: 15px 0;
+      padding-left: 27px;
+      padding-right: 276px;
+    }
+    button {
+      position: absolute;
+      left: 325px;
+
+      border: none;
+      background: #ba4270;
+      border-radius: 24px;
+
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      /* identical to box height */
+      letter-spacing: -0.115385px;
+      color: #fbfcfe;
+
+      padding: 15px 25px;
+
+      transition: all ease 0.5s;
+    }
+
+    button:hover{
+        background: #82143e;
+    }
+  }
+}

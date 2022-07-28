@@ -1,0 +1,226 @@
+.main-section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &__right {
+    position: relative;
+    &-bg {
+      position: absolute;
+      z-index: 1;
+      opacity: 0.15;
+      right: -200px;
+      top: -135px;
+    }
+    &-mob {
+      img {
+        z-index: 2;
+      }
+    }
+  }
+  &__left {
+    &-tittle {
+      max-width: 546px;
+
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 72px;
+      line-height: 72px;
+      /* or 100% */
+
+      letter-spacing: -0.553846px;
+
+      color: #36536b;
+
+      margin-bottom: 50px;
+    }
+
+    &-input {
+      position: relative;
+      display: flex;
+      label input {
+        padding: 15px;
+        padding-left: 27px;
+        padding-right: 276px;
+
+        background: #fbfcfe;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        border-radius: 24px;
+        border: none;
+
+        font-family: "Public Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        /* identical to box height */
+
+        color: #36536b;
+      }
+
+      button {
+        position: absolute;
+        background: #ba4270;
+        border-radius: 24px;
+
+        font-family: "Public Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        /* identical to box height */
+
+        letter-spacing: -0.115385px;
+
+        color: #fbfcfe;
+
+        padding: 15px 25px;
+        border: none;
+        left: 325px;
+        transition: all ease 0.5s;
+      }
+
+      button:hover {
+        background: #a3184d;
+      }
+    }
+    a {
+      position: absolute;
+
+      text-decoration: none;
+
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      /* identical to box height */
+
+      color: #6c8294;
+
+      padding-top: 16px;
+      margin-left: 27px;
+    }
+    a:hover {
+      color: black;
+    }
+  }
+  &__right-tabmob {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .main-section1 {
+    &__right {
+      &-bg {
+        max-width: 500px;
+        left: 5px;
+        top: -140px;
+      }
+      &-mob {
+        left: 0px;
+        max-width: 350px;
+      }
+    }
+  }
+}
+.main-section1__right-tabbg {
+  display: none;
+  max-width: 949px;
+}
+
+@media (max-width: 1100px) {
+  .main-section1__left-tittle {
+    font-size: 55px;
+  }
+
+  .main-section1__left-input {
+    label input {
+      padding-right: 250px;
+    }
+    button {
+      left: 300px;
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .main-section1__right-bg {
+    left: -165px;
+    top: -130px;
+    display: none;
+  }
+}
+
+@media (max-width: 945px) {
+  .main-section1__right-bg {
+    left: -165px;
+    top: -130px;
+    display: none;
+  }
+
+  .main-section1 {
+    flex-direction: column-reverse;
+  }
+  .main-section1__right-mobmax {
+    display: none;
+  }
+  .main-section1__right-tabmob {
+    display: block;
+  }
+  .main-section1__left-tittle {
+    text-align: center;
+  }
+  .main-section1__left {
+    position: relative;
+    a {
+      position: absolute;
+      left: 160px;
+      bottom: -90px;
+    }
+    .main-section1__left-input {
+      position: absolute;
+      left: 50px;
+    }
+  }
+  .main-section1__right {
+    position: relative;
+  }
+  .main-section1__right-tabbg {
+    display: block;
+    position: absolute;
+    opacity: 0.15;
+    left: -300px;
+    top: -120px;
+  }
+}
+
+@media (max-width: 610px) {
+  .main-section1__right-tabbg {
+    left: -290px;
+    top: -130px;
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-section1__left-tittle {
+    font-size: 50px;
+  }
+  a {
+    left: 100px;
+    bottom: -80px;
+  }
+  .main-section1__left-input {
+    label {
+      position: absolute;
+      left: px;
+    }
+  }
+  .main-section1__right-tabmob {
+    left: 2px;
+  }
+}

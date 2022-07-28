@@ -1,0 +1,55 @@
+.main-section4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 250px;
+  &__left {
+    &-tittle {
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      /* identical to box height, or 117% */
+      letter-spacing: -0.369231px;
+      color: #36536b;
+    }
+    &-paragraph {
+      max-width: 410px;
+
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      /* or 187% */
+      color: #6c8294;
+
+      margin-top: 25px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    position: relative;
+    &-bg {
+      z-index: 1;
+      position: absolute;
+      right: -200px;
+      top:-420px;
+      opacity: 0.15;
+    }
+
+    &-img1 {
+      z-index: 2;
+      position: absolute;
+      left: -595px;
+    }
+    &-img2 {
+      z-index: 2;
+      position: absolute;
+      right: -120px;
+    }
+  }
+}
